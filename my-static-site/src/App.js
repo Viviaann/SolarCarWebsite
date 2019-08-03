@@ -450,7 +450,7 @@ class App extends Component {
       </div>
 */
 
-      <div className="App">
+      <div className="App index is-preload">
         {/*<head>
           <title>Triton Solar Car</title>
           <meta charset="utf-8" />
@@ -486,208 +486,204 @@ class App extends Component {
             <link rel="stylesheet" href="assets/css/noscript.css" />
           </noscript>
         </head>*/}
-        <body class="index is-preload">
-          <div id="page-wrapper">
-            <header id="header" class="alt">
-              <h1>
-                {/*<a href="index.html">*/}
-                <img id="logo" src="./images/ESW.png" alt="ESW Logo" />
-                {/*</a>*/}
-              </h1>
-              <nav id="nav">
-                <BrowserRouter>
-                  <ul>
-                    <li class="current">
-                      <a href="index.html">About Us</a>
-                    </li>
-                    <li>
-                      <Link to="team">Team</Link>
-                    </li>
-                    <li>
-                      <a href="updates.html">Updates</a>
-                    </li>
-                    <li>
-                      <a href="media.html">Media</a>
-                    </li>
-                    <li>
-                      <a href="donate.html">Donate</a>
-                    </li>
-                    <li>
-                      <a href="contact.html" class="button primary">
-                        Contact Us
-                      </a>
-                    </li>
-                  </ul>
-                  <Switch>
-                    <Route path="/Team" component={Team} />
-                  </Switch>
-                </BrowserRouter>
-              </nav>
+
+        <div id="page-wrapper">
+          <header id="header" className="alt">
+            <h1>
+              {/*<a href="index.html">*/}
+              <img id="logo" src="./images/ESW.png" alt="ESW Logo" />
+              {/*</a>*/}
+            </h1>
+            <nav id="nav">
+              <BrowserRouter>
+                <ul>
+                  <li className="current">
+                    <a href="index.html">About Us</a>
+                  </li>
+                  <li>
+                    <Link to="team">Team</Link>
+                  </li>
+                  <li>
+                    <a href="updates.html">Updates</a>
+                  </li>
+                  <li>
+                    <a href="media.html">Media</a>
+                  </li>
+                  <li>
+                    <a href="donate.html">Donate</a>
+                  </li>
+                  <li>
+                    <a href="contact.html" className="button primary">
+                      Contact Us
+                    </a>
+                  </li>
+                </ul>
+                <Switch>
+                  <Route path="/Team" component={Team} />
+                </Switch>
+              </BrowserRouter>
+            </nav>
+          </header>
+
+          <section id="banner">
+            <div className="inner">
+              <header>
+                <h2>UCSD Solar Car</h2>
+              </header>
+              <p>Welcome!</p>
+              <p>Engineers for a Sustainable World</p>
+              <footer>
+                <ul className="buttons stacked">
+                  <li>
+                    <a href="#main" className="button fit scrolly">
+                      Tell Me More
+                    </a>
+                  </li>
+                </ul>
+              </footer>
+            </div>
+          </section>
+
+          <article id="main">
+            <header className="special container">
+              <span className="icon fa-bar-chart-o" />
+              <h2>
+                A Student Organization Dedicated to Excellence in Sustainable
+                Engineering
+              </h2>
+              <p className="text-left my-3">
+                Established in the fall of 2015, UCSD's first Solar Car Team is
+                an entirely student-run project that aims to design, build,
+                test, and race solar powered vehicles. Comprised of over 20
+                students across a variety of disciplines and areas of study, we
+                have come together to start a Solar Car program at UCSD, located
+                in one of the sunniest cities in the world.
+              </p>
+              <p className="text-left my-3">
+                The Solar Car Project is the first of its kind in that it
+                attracts a large variety of students from various engineering as
+                well as non-engineering backgrounds. Participating in this
+                project gives students the opportunity to gain hands-on
+                experience with different fields of engineering (mechanical,
+                engineering, aerospace, design) as well as experience in
+                business, operations, and project management. Students in Triton
+                Solar Car can stand out from the crowd by gaining important
+                real-world experience and operating in an environment that
+                prepares them for their careers by getting involved in setting
+                deadlines, budgets, designs, reviews while doing their best to
+                control all the unforeseen variables that may arise.
+              </p>
+              <p className="text-left my-3">
+                Being a member of Triton Solar Car is more than just being a
+                part of any other club, it allows students to not only create a
+                better future for themselves, but for the world by supporting
+                sustainable, clean energy.
+              </p>
             </header>
 
-            <section id="banner">
-              <div class="inner">
-                <header>
-                  <h2>UCSD Solar Car</h2>
-                </header>
-                <p>
-                  Welcome!
-                  <p>Engineers for a Sustainable World</p>
-                </p>
-                <footer>
-                  <ul class="buttons stacked">
-                    <li>
-                      <a href="#main" class="button fit scrolly">
-                        Tell Me More
-                      </a>
-                    </li>
-                  </ul>
-                </footer>
+            <section className="wrapper style1 container special">
+              <div className="row">
+                <div className="col-4 col-12-narrower">
+                  <section>
+                    <span className="icon featured fa-briefcase" />
+                    <header>
+                      <h3>Business Team</h3>
+                    </header>
+                    <p>
+                      This team works on the financial side of the project by
+                      contacting potential sponsors and corporations to make
+                      sure that there are enough resources to actually build the
+                      car.
+                    </p>
+                  </section>
+                </div>
+                <div className="col-4 col-12-narrower">
+                  <section>
+                    <span className="icon featured fa-cogs" />
+                    <header>
+                      <h3>Mechanical Team</h3>
+                    </header>
+                    <p>
+                      Under the mechanical lead, this team is responsible for
+                      designing and building all mechanical aspects of the car
+                      such as the chassis, suspension, body and frame. The team
+                      uses CAD softwares to design and test their parts and
+                      build the entire vehicle from scratch.
+                    </p>
+                  </section>
+                </div>
+                <div className="col-4 col-12-narrower">
+                  <section>
+                    <span className="icon featured fa-bolt" />
+                    <header>
+                      <h3>Electrical Team</h3>
+                    </header>
+                    <p>
+                      Under the electrical lead, this team designs and
+                      implements all electronic aspects of the car such as the
+                      solar array, the battery pack, telemetry and controls that
+                      make sure the car runs smoothly. Members use simulation
+                      software as well as prototyping to test their designs and
+                      do everything that is necessary to power the car with
+                      solar energy.
+                    </p>
+                  </section>
+                </div>
               </div>
             </section>
+          </article>
 
-            <article id="main">
-              <header class="special container">
-                <span class="icon fa-bar-chart-o" />
-                <h2>
-                  A Student Organization Dedicated to Excellence in Sustainable
-                  Engineering
-                </h2>
-                <p class="text-left my-3">
-                  Established in the fall of 2015, UCSD's first Solar Car Team
-                  is an entirely student-run project that aims to design, build,
-                  test, and race solar powered vehicles. Comprised of over 20
-                  students across a variety of disciplines and areas of study,
-                  we have come together to start a Solar Car program at UCSD,
-                  located in one of the sunniest cities in the world.
-                </p>
-                <p class="text-left my-3">
-                  The Solar Car Project is the first of its kind in that it
-                  attracts a large variety of students from various engineering
-                  as well as non-engineering backgrounds. Participating in this
-                  project gives students the opportunity to gain hands-on
-                  experience with different fields of engineering (mechanical,
-                  engineering, aerospace, design) as well as experience in
-                  business, operations, and project management. Students in
-                  Triton Solar Car can stand out from the crowd by gaining
-                  important real-world experience and operating in an
-                  environment that prepares them for their careers by getting
-                  involved in setting deadlines, budgets, designs, reviews while
-                  doing their best to control all the unforeseen variables that
-                  may arise.
-                </p>
-                <p class="text-left my-3">
-                  Being a member of Triton Solar Car is more than just being a
-                  part of any other club, it allows students to not only create
-                  a better future for themselves, but for the world by
-                  supporting sustainable, clean energy.
-                </p>
-              </header>
+          <footer id="footer">
+            <ul className="icons">
+              <li>
+                <a
+                  href="https://www.facebook.com/ucsdsolarcar/"
+                  className="icon circle fa-facebook"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <span className="label">Facebook</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/ucsdsolarcar/"
+                  className="icon circle fa-instagram"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <span className="label">Instagram</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/TritonSolarCar"
+                  className="icon circle fa-github"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <span className="label">Github</span>
+                </a>
+              </li>
+            </ul>
 
-              <section class="wrapper style1 container special">
-                <div class="row">
-                  <div class="col-4 col-12-narrower">
-                    <section>
-                      <span class="icon featured fa-briefcase" />
-                      <header>
-                        <h3>Business Team</h3>
-                      </header>
-                      <p>
-                        This team works on the financial side of the project by
-                        contacting potential sponsors and corporations to make
-                        sure that there are enough resources to actually build
-                        the car.
-                      </p>
-                    </section>
-                  </div>
-                  <div class="col-4 col-12-narrower">
-                    <section>
-                      <span class="icon featured fa-cogs" />
-                      <header>
-                        <h3>Mechanical Team</h3>
-                      </header>
-                      <p>
-                        Under the mechanical lead, this team is responsible for
-                        designing and building all mechanical aspects of the car
-                        such as the chassis, suspension, body and frame. The
-                        team uses CAD softwares to design and test their parts
-                        and build the entire vehicle from scratch.
-                      </p>
-                    </section>
-                  </div>
-                  <div class="col-4 col-12-narrower">
-                    <section>
-                      <span class="icon featured fa-bolt" />
-                      <header>
-                        <h3>Electrical Team</h3>
-                      </header>
-                      <p>
-                        Under the electrical lead, this team designs and
-                        implements all electronic aspects of the car such as the
-                        solar array, the battery pack, telemetry and controls
-                        that make sure the car runs smoothly. Members use
-                        simulation software as well as prototyping to test their
-                        designs and do everything that is necessary to power the
-                        car with solar energy.
-                      </p>
-                    </section>
-                  </div>
-                </div>
-              </section>
-            </article>
+            <ul className="copyright">
+              <li>&copy; 2019 UCSD Solar Car</li>
+              <li>
+                Design: <a href="http://html5up.net">HTML5 UP</a>
+              </li>
+            </ul>
+          </footer>
+        </div>
 
-            <footer id="footer">
-              <ul class="icons">
-                <li>
-                  <a
-                    href="https://www.facebook.com/ucsdsolarcar/"
-                    class="icon circle fa-facebook"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                  >
-                    <span class="label">Facebook</span>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.instagram.com/ucsdsolarcar/"
-                    class="icon circle fa-instagram"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                  >
-                    <span class="label">Instagram</span>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://github.com/TritonSolarCar"
-                    class="icon circle fa-github"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                  >
-                    <span class="label">Github</span>
-                  </a>
-                </li>
-              </ul>
-
-              <ul class="copyright">
-                <li>&copy; 2019 UCSD Solar Car</li>
-                <li>
-                  Design: <a href="http://html5up.net">HTML5 UP</a>
-                </li>
-              </ul>
-            </footer>
-          </div>
-
-          <script src="assets/js/jquery.min.js" />
-          <script src="assets/js/jquery.dropotron.min.js" />
-          <script src="assets/js/jquery.scrolly.min.js" />
-          <script src="assets/js/jquery.scrollex.min.js" />
-          <script src="assets/js/browser.min.js" />
-          <script src="assets/js/breakpoints.min.js" />
-          <script src="assets/js/util.js" />
-          <script src="assets/js/main.js" />
-        </body>
+        <script src="assets/js/jquery.min.js" />
+        <script src="assets/js/jquery.dropotron.min.js" />
+        <script src="assets/js/jquery.scrolly.min.js" />
+        <script src="assets/js/jquery.scrollex.min.js" />
+        <script src="assets/js/browser.min.js" />
+        <script src="assets/js/breakpoints.min.js" />
+        <script src="assets/js/util.js" />
+        <script src="assets/js/main.js" />
       </div>
     );
   }
