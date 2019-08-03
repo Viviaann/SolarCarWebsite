@@ -37,7 +37,7 @@ class App extends Component {
           </span>
         </header>
       </div>*/
-
+      /*
       <div className="App">
         <html>
           <head>
@@ -54,7 +54,7 @@ class App extends Component {
           </head>
           <body class="index is-preload">
             <div id="page-wrapper">
-              /*Header*/
+              //Header
               <header id="header" class="alt">
                 <h1 id="logo">
                   <a href="index.html">
@@ -111,13 +111,13 @@ class App extends Component {
                   </ul>
                 </nav>
               </header>
-              /*Banner*/
+              //Banner
               <section id="banner">
-                /* ".inner" is set up as an inline-block so it automatically
-                expands in both directions to fit whatever's inside it. This
+                // ".inner" is set up as an inline-block so it automatically //
+                expands in both directions to fit whatever's inside it. This /
                 means it won't automatically wrap lines, so be sure to use line
-                breaks where appropriate (<br />
-                ). */
+                // breaks where appropriate (<br />
+                //).
                 <div class="inner">
                   <header>
                     <h2>TWENTY</h2>
@@ -140,7 +140,7 @@ class App extends Component {
                   </footer>
                 </div>
               </section>
-              /*Main*/
+              // Main
               <article id="main">
                 <header class="special container">
                   <span class="icon fa-bar-chart-o" />
@@ -163,7 +163,7 @@ class App extends Component {
                     license. Have fun!
                   </p>
                 </header>
-                /*One*/
+                //One
                 <section class="wrapper style2 container special-alt">
                   <div class="row gtr-50">
                     <div class="col-8 col-12-narrower">
@@ -228,7 +228,7 @@ class App extends Component {
                     </div>
                   </div>
                 </section>
-                /*Two*/
+                //Two
                 <section class="wrapper style1 container special">
                   <div class="row">
                     <div class="col-4 col-12-narrower">
@@ -275,7 +275,7 @@ class App extends Component {
                     </div>
                   </div>
                 </section>
-                /*Three*/
+                //Three
                 <section class="wrapper style3 container special">
                   <header class="major">
                     <h2>
@@ -363,7 +363,7 @@ class App extends Component {
                   </footer>
                 </section>
               </article>
-              /*CTA*/
+              //CTA
               <section id="cta">
                 <header>
                   <h2>
@@ -389,7 +389,7 @@ class App extends Component {
                   </ul>
                 </footer>
               </section>
-              /*Footer*/
+              //Footer
               <footer id="footer">
                 <ul class="icons">
                   <li>
@@ -427,7 +427,7 @@ class App extends Component {
                 </ul>
               </footer>
             </div>
-            /*Scripts*/
+            //Scripts
             <script src="assets/js/jquery.min.js" />
             <script src="assets/js/jquery.dropotron.min.js" />
             <script src="assets/js/jquery.scrolly.min.js" />
@@ -439,9 +439,9 @@ class App extends Component {
           </body>
         </html>
       </div>
+*/
 
-      /*
-            <div className="App">
+      <div className="App">
         <html>
           <head>
             <title>Triton Solar Car</title>
@@ -521,7 +521,7 @@ class App extends Component {
                 </header>
                 <p>
                   Welcome!
-                  <br>Engineers for a Sustainable World</br>
+                  <p>Engineers for a Sustainable World</p>
                 </p>
                 <footer>
                   <ul class="buttons stacked">
@@ -678,7 +678,6 @@ class App extends Component {
           <script src="assets/js/main.js" />
         </body>
       </div>
-      */
     );
   }
 }
