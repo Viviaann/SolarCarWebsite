@@ -495,33 +495,34 @@ class App extends Component {
               {/*</a>*/}
             </h1>
             <nav id="nav">
-              <BrowserRouter>
-                <ul>
-                  <li className="current">
-                    <a href="index.html">About Us</a>
-                  </li>
-                  <li>
-                    <Link to="team">Team</Link>
-                  </li>
-                  <li>
-                    <a href="updates.html">Updates</a>
-                  </li>
-                  <li>
-                    <a href="media.html">Media</a>
-                  </li>
-                  <li>
-                    <a href="donate.html">Donate</a>
-                  </li>
-                  <li>
-                    <a href="contact.html" className="button primary">
-                      Contact Us
-                    </a>
-                  </li>
-                </ul>
-                <Switch>
+              {/*<BrowserRouter>*/}
+              <ul>
+                <li className="current">
+                  <a href="index.html">About Us</a>
+                </li>
+                <li>
+                  {/*<a href="index.html">Team</a>*/}
+                  <Link to="team">Team</Link>
+                </li>
+                <li>
+                  <a href="updates.html">Updates</a>
+                </li>
+                <li>
+                  <a href="media.html">Media</a>
+                </li>
+                <li>
+                  <a href="donate.html">Donate</a>
+                </li>
+                <li>
+                  <a href="contact.html" className="button primary">
+                    Contact Us
+                  </a>
+                </li>
+              </ul>
+              {/*<Switch>
                   <Route path="/Team" component={Team} />
                 </Switch>
-              </BrowserRouter>
+                </BrowserRouter>*/}
             </nav>
           </header>
 
