@@ -118,56 +118,27 @@ class Team extends Component {
                   <section>
                     <span class="icon featured fa-briefcase" />
                     <header>
-                      <h3>Project Lead: Shane Keegan</h3>
+                      <h3>Project Lead: Kieu Huynh</h3>
                     </header>
-                    <p>
-                      Class of 2018 | Electrical Engineering | Shane is a 4th
-                      year electrical engineering student planning on focusing
-                      on power engineering. As Project Lead, Shane must ensure
-                      that all benchmarks must be reached before their
-                      deadlines, as well as ensure that each team is organized
-                      and on schedule. His responsibilities to the team include
-                      managing team outreach and communications, and
-                      contributing to electrical design. His two favorite things
-                      are good coffee and good music.
-                    </p>
+                    <p>Class of 2020 | Mechanical Engineering</p>
                   </section>
                 </div>
                 <div class="col-4 col-12-narrower">
                   <section>
                     <span class="icon featured fa-cogs" />
                     <header>
-                      <h3>Mechanical Lead: Casey Fitzpatrick</h3>
+                      <h3>Mechanical Lead: Roy Choi</h3>
                     </header>
-                    <p>
-                      Class of 2018 | Aerospace Engineering Casey leads the
-                      mechanical team to work on the aerodynamic design of the
-                      body and Finite Element Analysis of the vehicle.
-                      Additionally, his background in carpentry has helped
-                      coordinate the production of the body of the car. In the
-                      time spent outside of his studies you can find Casey on
-                      the trails backpacking or cruising around on his
-                      skateboard.
-                    </p>
+                    <p>Class of 2019 | Mechanical Engineering</p>
                   </section>
                 </div>
                 <div class="col-4 col-12-narrower">
                   <section>
                     <span class="icon featured fa-bolt" />
                     <header>
-                      <h3>Electrical Lead: Noah Chung</h3>
+                      <h3>EE Lead: Bryan Thai</h3>
                     </header>
-                    <p>
-                      Class of 2018 | Electrical Engineering | Noah Chung is a
-                      4th year Electrical engineering student at UCSD. As
-                      electrical lead, Noah ensures that the electrical system
-                      for the vehicle is thoroughly completed with the work of
-                      each electrical team member. Noah sought out the Solar Car
-                      Project to grasp a deeper understanding of the solar
-                      vehicle building process but more importantly to learn
-                      about implementing renewable energy sources like solar
-                      energy.
-                    </p>
+                    <p>Class of 2019 | Bioengineering</p>
                   </section>
                 </div>
               </div>

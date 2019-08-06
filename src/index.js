@@ -37,7 +37,7 @@ if (typeof document !== "undefined") {
   };
 
   // Render!
-  //render(Team);
+  //render(App);
   ReactDOM.render(routing, document.getElementById("root"));
 
   // Hot Module Replacement
