@@ -7,7 +7,7 @@ import {
   Switch,
   BrowserRouter as Router
 } from "react-router-dom";
-import Team from "./Team";
+//import Team from "./Team";
 
 //import "./app.css";
 import logo from "./images/ESW.png";
@@ -58,19 +58,16 @@ class App extends Component {
         <div id="page-wrapper">
           <header id="header" className="alt">
             <h1>
-              {/*<a href="index.html">*/}
-              <img id="logo" src={logo} alt="ESW Logo" />
-              {/*</a>*/}
+              <Link to="/">
+                <img id="logo" src={logo} alt="ESW Logo" />
+              </Link>
             </h1>
             <nav id="nav">
-              {/*<BrowserRouter>*/}
               <ul>
                 <li className="current">
-                  {/*<a href="index.html">About Us</a>*/}
                   <Link to="/">About Us</Link>
                 </li>
                 <li>
-                  {/*<a href="index.html">Team</a>*/}
                   <Link to="/team">Team</Link>
                 </li>
                 <li>

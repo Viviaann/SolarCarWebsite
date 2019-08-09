@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 
 import logo from "./images/ESW.png";
+import piechart from "./images/Major Distribution.png";
 
 class Team extends Component {
   render() {
@@ -52,9 +53,9 @@ class Team extends Component {
         <div id="page-wrapper">
           <header id="header" class="alt">
             <h1>
-              <a href="index.html">
+              <Link to="/">
                 <img id="logo" src={logo} alt="ESW Logo" />
-              </a>
+              </Link>
             </h1>
             <nav id="nav">
               <ul>
@@ -83,7 +84,7 @@ class Team extends Component {
           </header>
 
           <section id="banner">
-            <div class="inner">
+            <div id="teamtext" class="inner">
               <header>
                 <h2>Team</h2>
               </header>
@@ -111,6 +112,9 @@ class Team extends Component {
                   <p />
                 </section>
               </div>
+            </section>
+            <section class="wrapper style1 container special">
+              <img id="piechart" src={piechart} alt="Pie Chart" />
             </section>
             <section class="wrapper style1 container special">
               <div class="row">
@@ -143,6 +147,7 @@ class Team extends Component {
                 </div>
               </div>
             </section>
+
             <section class="wrapper style1 container special">
               <div class="row">
                 <div class="col-4 col-12-narrower">
@@ -151,10 +156,7 @@ class Team extends Component {
                     <header>
                       <h3>Operations Team</h3>
                     </header>
-                    <p>
-                      Shane Keegan, Anthony Flores, Christopher Wiggins, Dave
-                      Lightfoot
-                    </p>
+                    <p>Camila Paik, Angela Yu</p>
                   </section>
                 </div>
                 <div class="col-4 col-12-narrower">
@@ -164,9 +166,10 @@ class Team extends Component {
                       <h3>Mechanical Team</h3>
                     </header>
                     <p>
-                      Casey Fitzpatrick, Angela Yu, Sukhdeep Chera, Roy Choi,
-                      Jasmine Ng, Kieu Huynh, Trevor Harman, Iva Robb, Nariyan
-                      Okuma
+                      Roy Choi, Janet He, Eugine Lin, Angela Yu, Canwin Tso,
+                      Sean Orellana, Jennie Coates, Arjun Ray, Arturo Medina,
+                      Jesse Sanchez, Dustin Tengdyantono, Billy Park, Jacob
+                      Watson, Sukhdeep Chera,
                     </p>
                   </section>
                 </div>
@@ -177,8 +180,8 @@ class Team extends Component {
                       <h3>Electrical Team</h3>
                     </header>
                     <p>
-                      Noah Chung, Philman Tjong, Oscar Shaw, Eric Brown, Aditya
-                      Mangharam, Andrew Betts, Charles Elliot
+                      Bryan Thai, Dan Nguyen, Vivian Lee, Sara Dorr, Madeline
+                      Tjoa, Jonathan Venegas, Daniel Renfrow
                     </p>
                   </section>
                 </div>
