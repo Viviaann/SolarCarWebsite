@@ -11,7 +11,7 @@ import {
 
 //import "./app.css";
 import logo from "./images/ESW.png";
-import "./assets/css/main.css";
+
 import "./assets/css/font-awesome.min.css";
 import "./assets/css/noscript.css";
 
@@ -80,9 +80,9 @@ class App extends Component {
                   <a href="donate.html">Donate</a>
                 </li>
                 <li>
-                  <a href="contact.html" className="button primary">
+                  <Link to="/dummy" className="button primary">
                     Contact Us
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </nav>

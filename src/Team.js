@@ -51,7 +51,7 @@ class Team extends Component {
             </noscript>
           </head> */}
         <div id="page-wrapper">
-          <header id="header" class="alt">
+          <header id="header" className="alt">
             <h1>
               <Link to="/">
                 <img id="logo" src={logo} alt="ESW Logo" />
@@ -62,7 +62,7 @@ class Team extends Component {
                 <li>
                   <Link to="/">About Us</Link>
                 </li>
-                <li class="current">
+                <li className="current">
                   <Link to="/team">Team</Link>
                 </li>
                 <li>
@@ -75,16 +75,16 @@ class Team extends Component {
                   <a href="donate.html">Donate</a>
                 </li>
                 <li>
-                  <a href="contact.html" class="button primary">
+                  <Link to="/dummy" className="button primary">
                     Contact Us
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </nav>
           </header>
 
           <section id="banner">
-            <div id="teamtext" class="inner">
+            <div id="teamtext" className="inner">
               <header>
                 <h2>Team</h2>
               </header>
@@ -94,8 +94,8 @@ class Team extends Component {
             </div>
           </section>
           <article id="main">
-            <section class="wrapper style4 container">
-              <div class="content">
+            <section className="wrapper style4 container">
+              <div className="content">
                 <section>
                   <header>
                     <h3>The Roster</h3>
@@ -113,55 +113,55 @@ class Team extends Component {
                 </section>
               </div>
             </section>
-            <section class="wrapper style1 container special">
+            <section className="wrapper style1 container special">
               <img id="piechart" src={piechart} alt="Pie Chart" />
             </section>
-            <section class="wrapper style1 container special">
-              <div class="row">
-                <div class="col-4 col-12-narrower">
+            <section className="wrapper style1 container special">
+              <div className="row">
+                <div className="col-4 col-12-narrower">
                   <section>
-                    <span class="icon featured fa-briefcase" />
+                    <span className="icon featured fa-briefcase" />
                     <header>
                       <h3>Project Lead: Kieu Huynh</h3>
                     </header>
-                    <p>Class of 2020 | Mechanical Engineering</p>
+                    <p>class of 2020 | Mechanical Engineering</p>
                   </section>
                 </div>
-                <div class="col-4 col-12-narrower">
+                <div className="col-4 col-12-narrower">
                   <section>
-                    <span class="icon featured fa-cogs" />
+                    <span className="icon featured fa-cogs" />
                     <header>
                       <h3>Mechanical Lead: Roy Choi</h3>
                     </header>
-                    <p>Class of 2019 | Mechanical Engineering</p>
+                    <p>class of 2019 | Mechanical Engineering</p>
                   </section>
                 </div>
-                <div class="col-4 col-12-narrower">
+                <div className="col-4 col-12-narrower">
                   <section>
-                    <span class="icon featured fa-bolt" />
+                    <span className="icon featured fa-bolt" />
                     <header>
                       <h3>EE Lead: Bryan Thai</h3>
                     </header>
-                    <p>Class of 2019 | Bioengineering</p>
+                    <p>class of 2019 | Bioengineering</p>
                   </section>
                 </div>
               </div>
             </section>
 
-            <section class="wrapper style1 container special">
-              <div class="row">
-                <div class="col-4 col-12-narrower">
+            <section className="wrapper style1 container special">
+              <div className="row">
+                <div className="col-4 col-12-narrower">
                   <section>
-                    <span class="icon featured fa-briefcase" />
+                    <span className="icon featured fa-briefcase" />
                     <header>
                       <h3>Operations Team</h3>
                     </header>
                     <p>Camila Paik, Angela Yu</p>
                   </section>
                 </div>
-                <div class="col-4 col-12-narrower">
+                <div className="col-4 col-12-narrower">
                   <section>
-                    <span class="icon featured fa-cogs" />
+                    <span className="icon featured fa-cogs" />
                     <header>
                       <h3>Mechanical Team</h3>
                     </header>
@@ -173,9 +173,9 @@ class Team extends Component {
                     </p>
                   </section>
                 </div>
-                <div class="col-4 col-12-narrower">
+                <div className="col-4 col-12-narrower">
                   <section>
-                    <span class="icon featured fa-bolt" />
+                    <span className="icon featured fa-bolt" />
                     <header>
                       <h3>Electrical Team</h3>
                     </header>
@@ -189,40 +189,40 @@ class Team extends Component {
             </section>
           </article>
           <footer id="footer">
-            <ul class="icons">
+            <ul className="icons">
               <li>
                 <a
                   href="https://www.facebook.com/ucsdsolarcar/"
-                  class="icon circle fa-facebook"
+                  className="icon circle fa-facebook"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  <span class="label">Facebook</span>
+                  <span className="label">Facebook</span>
                 </a>
               </li>
               <li>
                 <a
                   href="https://www.instagram.com/ucsdsolarcar/"
-                  class="icon circle fa-instagram"
+                  className="icon circle fa-instagram"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  <span class="label">Instagram</span>
+                  <span className="label">Instagram</span>
                 </a>
               </li>
               <li>
                 <a
                   href="https://github.com/TritonSolarCar"
-                  class="icon circle fa-github"
+                  className="icon circle fa-github"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  <span class="label">Github</span>
+                  <span className="label">Github</span>
                 </a>
               </li>
             </ul>
 
-            <ul class="copyright">
+            <ul className="copyright">
               <li>&copy; 2019 UCSD Solar Car</li>
               <li>
                 Design: <a href="http://html5up.net">HTML5 UP</a>

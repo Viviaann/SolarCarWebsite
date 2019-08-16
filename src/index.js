@@ -2,11 +2,13 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { AppContainer } from "react-hot-loader";
 
-import { Link, BrowserRouter as Router, Route } from "react-router-dom";
+import { Link, Switch, BrowserRouter as Router, Route } from "react-router-dom";
 
 // Your top level component
 import App from "./App";
 import Team from "./Team";
+
+import Dummy from "./Dummy";
 
 import "./assets/css/main.css";
 
@@ -19,8 +21,11 @@ if (typeof document !== "undefined") {
 
   const routing = (
     <Router>
-      <Route exact path="/" component={App} />
-      <Route exact path="/team" component={Team} />
+      <Switch>
+        <Route exact path="/" component={App} />
+        <Route exact path="/team" component={Team} />
+        <Route exact path="/dummy" component={Dummy} />
+      </Switch>
     </Router>
   );
   const renderMethod = target.hasChildNodes()
@@ -36,10 +41,6 @@ if (typeof document !== "undefined") {
     );
   };
 
-  const liststyle = {
-    color: "red",
-    fontSize: "25px"
-  };
   // Render!
   //render(App);
   ReactDOM.render(routing, document.getElementById("root"));

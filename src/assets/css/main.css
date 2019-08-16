@@ -2045,6 +2045,15 @@ input[type="email"] {
   background: #df7b77;
 }
 
+.icon.circle.fa-instagram {
+  background: #db6b67;
+  color: #fff;
+}
+
+.icon.circle.fa-instagram:hover {
+  background: #df7b77;
+}
+
 .icon.circle.fa-github {
   background: #dcad8b;
   color: #fff;
