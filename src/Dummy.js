@@ -55,7 +55,7 @@ class Dummy extends Component {
 
             <section className="wrapper style4 special container medium">
               <div className="content">
-                <form>
+                <form method="POST" action="/contact">
                   <div className="row gtr-50">
                     <div className="col-6 col-12-mobile">
                       <input type="text" name="name" placeholder="Name" />
@@ -80,6 +80,19 @@ class Dummy extends Component {
                         </li>
                       </ul>
                     </div>
+                  </div>
+
+                  <div>
+                    {window.location.hash === "#success" && (
+                      <div id="success">
+                        <p>Your message has been sent!</p>
+                      </div>
+                    )}
+                    {window.location.hash === "#error" && (
+                      <div id="error">
+                        <p>An error occured while submitting the form.</p>
+                      </div>
+                    )}
                   </div>
                 </form>
               </div>

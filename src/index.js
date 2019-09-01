@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { AppContainer } from "react-hot-loader";
+import registerServiceWorker from "./registerServiceWorker";
 
 import { Link, Switch, BrowserRouter as Router, Route } from "react-router-dom";
 
@@ -44,6 +45,9 @@ if (typeof document !== "undefined") {
   // Render!
   //render(App);
   ReactDOM.render(routing, document.getElementById("root"));
+
+  //don't think we need this
+  registerServiceWorker();
 
   // Hot Module Replacement
   if (module && module.hot) {
