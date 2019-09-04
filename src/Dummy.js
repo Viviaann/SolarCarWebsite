@@ -9,6 +9,15 @@ import {
 
 import logo from "./images/ESW.png";
 
+const sendEmail = (email, userName = "Anakin Skywalker") => {
+  console.log(`got inside sendEmail function`);
+  alert("Hello! I am an alert box!!");
+  return fetch("/contact", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ email, userName })
+  }).then(response => response.json());
+};
 class Dummy extends Component {
   render() {
     return (
@@ -55,7 +64,7 @@ class Dummy extends Component {
 
             <section className="wrapper style4 special container medium">
               <div className="content">
-                <form method="POST" action="/contact">
+                <form onSubmit={() => sendEmail()} action="/contact">
                   <div className="row gtr-50">
                     <div className="col-6 col-12-mobile">
                       <input type="text" name="name" placeholder="Name" />
