@@ -8,8 +8,44 @@ import {
 } from "react-router-dom";
 
 import logo from "./images/ESW.png";
+const sgMail = require("@sendgrid/mail");
+const axios = require("axios");
 
 class Dummy extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      mailSent: false,
+      error: null
+    };
+  }
+
+  handleFormSubmit = e => {
+    e.preventDefault();
+    console.log(this.state);
+
+    /*sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+    const msg = {
+      to: this.state.email,
+      from: "test@example.com",
+      subject: "Sending with Twilio SendGrid is Fun",
+      text: "and easy to do anywhere, even with Node.js",
+      html: "<strong>and easy to do anywhere, even with Node.js</strong>"
+    };
+    sgMail.send(msg);*/
+    axios
+      .post("/api/", {
+        firstName: "Fred",
+        lastName: "Flintstone"
+      })
+      .then(function(response) {
+        console.log(response);
+      })
+      .catch(function(error) {
+        console.log(error);
+      });
+  };
+
   render() {
     return (
       <div className="contact is-preload">
@@ -58,16 +94,44 @@ class Dummy extends Component {
                 <form>
                   <div className="row gtr-50">
                     <div className="col-6 col-12-mobile">
-                      <input type="text" name="name" placeholder="Name" />
+                      <input
+                        type="text"
+                        name="name"
+                        placeholder="Name"
+                        onChange={e => this.setState({ name: e.target.value })}
+                        value={this.state.name}
+                      />
                     </div>
                     <div className="col-6 col-12-mobile">
-                      <input type="text" name="email" placeholder="Email" />
+                      <input
+                        type="text"
+                        name="email"
+                        placeholder="Email"
+                        onChange={e => this.setState({ email: e.target.value })}
+                        value={this.state.email}
+                      />
                     </div>
                     <div className="col-12">
-                      <input type="text" name="subject" placeholder="Subject" />
+                      <input
+                        type="text"
+                        name="subject"
+                        placeholder="Subject"
+                        onChange={e =>
+                          this.setState({ subject: e.target.value })
+                        }
+                        value={this.state.subject}
+                      />
                     </div>
                     <div className="col-12">
-                      <textarea name="message" placeholder="Message" rows="7" />
+                      <textarea
+                        name="message"
+                        placeholder="Message"
+                        rows="7"
+                        onChange={e =>
+                          this.setState({ message: e.target.value })
+                        }
+                        value={this.state.message}
+                      />
                     </div>
                     <div className="col-12">
                       <ul className="buttons">
@@ -76,6 +140,7 @@ class Dummy extends Component {
                             type="submit"
                             className="special"
                             value="Send Message"
+                            onClick={e => this.handleFormSubmit(e)}
                           />
                         </li>
                       </ul>
