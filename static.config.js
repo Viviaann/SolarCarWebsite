@@ -7,4 +7,9 @@
 
 export default {
   maxThreads: 1, // Remove this when you start doing any static generation
-}
+  node: {
+    net: "empty",
+    fs: "empty",
+    tls: "empty"
+  }
+};

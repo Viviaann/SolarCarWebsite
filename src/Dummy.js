@@ -8,8 +8,8 @@ import {
 } from "react-router-dom";
 
 import logo from "./images/ESW.png";
-const sgMail = require("@sendgrid/mail");
-const axios = require("axios");
+//const sgMail = require("@sendgrid/mail");
+//const axios = require("axios");
 
 class Dummy extends Component {
   constructor(props) {
@@ -19,12 +19,12 @@ class Dummy extends Component {
       error: null
     };
   }
-
+  /*
   handleFormSubmit = e => {
     e.preventDefault();
-    console.log(this.state);
+    console.log(this.state);*/
 
-    /*sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+  /*sgMail.setApiKey(process.env.SENDGRID_API_KEY);
     const msg = {
       to: this.state.email,
       from: "test@example.com",
@@ -33,7 +33,7 @@ class Dummy extends Component {
       html: "<strong>and easy to do anywhere, even with Node.js</strong>"
     };
     sgMail.send(msg);*/
-    axios
+  /*axios
       .post("/api/", {
         firstName: "Fred",
         lastName: "Flintstone"
@@ -44,7 +44,7 @@ class Dummy extends Component {
       .catch(function(error) {
         console.log(error);
       });
-  };
+  };*/
 
   render() {
     return (
@@ -91,7 +91,10 @@ class Dummy extends Component {
 
             <section className="wrapper style4 special container medium">
               <div className="content">
-                <form>
+                <form
+                  action="https://formspree.io/danimalphantom@gmail.com"
+                  method="POST"
+                >
                   <div className="row gtr-50">
                     <div className="col-6 col-12-mobile">
                       <input
@@ -139,8 +142,8 @@ class Dummy extends Component {
                           <input
                             type="submit"
                             className="special"
-                            value="Send Message"
-                            onClick={e => this.handleFormSubmit(e)}
+                            value="Send"
+                            /** onClick={e => this.handleFormSubmit(e)}*/
                           />
                         </li>
                       </ul>

@@ -2,13 +2,19 @@
   "name": "react-static-example-blank",
   "private": true,
   "scripts": {
-    "start": "react-static start",
+    "start": "start npm run start:client && start npm run start:server",
+    "start:client": "react-static start",
+    "start:server": "node src/server/index.js",
     "stage": "react-static build --staging",
     "build": "react-static build",
     "analyze": "react-static build --analyze",
     "serve": "serve dist -p 3000"
   },
   "dependencies": {
+    "@sendgrid/mail": "^6.4.0",
+    "axios": "^0.19.0",
+    "express": "^4.17.1",
+    "http-proxy-middleware": "^0.20.0",
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
     "react-router-dom": "^5.0.1",
